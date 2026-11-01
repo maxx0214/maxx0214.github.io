@@ -1,5 +1,7 @@
 # 이승윤 · AI / LLM Portfolio
 
+[공개 웹사이트](https://maxx0214.github.io/) · [GitHub 저장소](https://github.com/maxx0214/maxx0214.github.io)
+
 PDF 포트폴리오를 바탕으로 제작한 한국어 취업용 포트폴리오입니다. 빌드와 서버, API 키 없이 동작하는 HTML/CSS/JavaScript 정적 사이트입니다.
 
 ## 내용 수정
