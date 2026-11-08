@@ -7,3 +7,5 @@
 @media print{.header,.round-link,.project-actions,dialog,.footer>a{display:none}.wrap{width:100%}.section{padding:30px 0}.hero h1{font-size:90px}.project{break-inside:avoid}.focus,.work,.contact{background:white;color:black}.focus p,.focus h2>span{color:#555}body{background:white}.section-label{margin-bottom:25px}.about-grid{grid-template-columns:180px 1fr;gap:30px}.project-visual{min-height:250px}.focus-grid{gap:25px}}
 
 .about-copy .cv-link{font-weight:700;text-decoration:underline;text-underline-offset:5px}
+
+.project-actions{flex-wrap:wrap;row-gap:12px}.contribution-title{font-size:10px;font-weight:500;margin:0 0 10px;letter-spacing:.08em}.contribution-list{margin:0 0 24px;padding-left:17px;font-size:12px;line-height:1.85;color:#61625a;word-break:keep-all}.contribution-list li+li{margin-top:5px}#dialog-content .detail-contributions li+li{margin-top:14px}#dialog-content .detail-contributions strong{color:var(--ink);font-weight:600}
