@@ -3,33 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f3f2ed">
   <title>Projects | SeungYoon Lee</title>
   <meta name="description" content="Projects and research notes by SeungYoon Lee: RAG, LLM evaluation, reinforcement learning, and sleep data analysis.">
   <meta property="og:title" content="Projects | SeungYoon Lee">
   <meta property="og:description" content="Projects and research notes by SeungYoon Lee: RAG, LLM evaluation, reinforcement learning, and sleep data analysis.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261125-profile">
-  <script src="script.js?v=20261125-profile" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261125-original-design">
+  <script src="script.js?v=20261125-original-design" defer></script>
 </head>
 <body data-page="projects">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="site-name" href="index.html">SeungYoon Lee</a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">About</a>
-      <a href="index.html#research">Research</a>
-      <a href="projects.html" aria-current="page">Projects</a>
-      <a href="assets/Lee-Seungyoon-CV.pdf?v=20261125-profile" target="_blank" rel="noopener">CV <span class="file-label">PDF</span></a>
-    </nav>
-  </header>
-  <main id="main" class="projects-main">
-    <header class="page-heading">
-      <a class="back-link" href="index.html">Back to my profile</a>
-      <h1>Projects & research notes</h1>
-      <p>A closer look at the systems I've built, the experiments I've run, and what I learned along the way.</p>
-    </header>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="wordmark" href="index.html" aria-label="SeungYoon Lee home">SY<span class="mark-dot">.</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#about">About</a><a href="index.html#focus">Interests</a><a href="projects.html">Projects</a><a href="assets/Lee-Seungyoon-CV.pdf?v=20261125-profile" target="_blank" rel="noopener">CV</a></nav>
+    <a class="header-contact" href="mailto:seoungyoon14@gmail.com">Let's talk</a>
+  </header><main id="main" class="projects-main wrap">
+    <header class="page-heading"><div class="section-label">
+<span class="mono">PROJECTS &amp; RESEARCH</span><a href="index.html">Back to my profile</a>
+</div>
+<h1>Selected<br><span>work.</span>
+</h1>
+<p>A closer look at the systems I've built, the experiments I've run, and what I learned along the way.</p></header>
     <nav class="project-index" aria-label="Project index">
       <a href="#turini">Turini</a>
       <a href="#evaluation">LLM / RAG evaluation</a>
@@ -37,8 +33,19 @@
       <a href="#mesa">MESA sleep study</a>
     </nav>
 
-    <article class="project-entry" id="turini" aria-labelledby="turini-title">
-      <div class="project-heading"><div><p class="entry-type">Team project · 2026</p><h2 id="turini-title">Turini</h2><p class="project-subtitle">RAG for financial education</p></div><a class="resource-link" href="https://github.com/team-TURINI/Turini-e2e" target="_blank" rel="noopener noreferrer">GitHub repository</a></div>
+    <article class="project project-entry" id="turini" aria-labelledby="turini-title">
+      <div class="project-visual turini-visual">
+<span class="visual-label mono">RAG SYSTEM</span><img src="assets/turini.webp" alt="Turini financial learning service logo" width="922" height="615" loading="lazy"><span class="visual-foot mono">PERSONALIZED FINANCIAL LEARNING</span>
+</div>
+<div class="project-copy">
+<div class="project-heading">
+<div>
+<p class="entry-type">Team project · 2026</p>
+<h2 id="turini-title">Turini</h2>
+<p class="project-subtitle">RAG for financial education</p>
+</div>
+<a class="resource-link" href="https://github.com/team-TURINI/Turini-e2e" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+</div>
       <p>Turini helps people new to finance learn through quizzes and ask follow-up questions about concepts they find confusing. I worked on the RAG functionality as part of a three-person RAG team within a six-person project team.</p>
       <h3>My role</h3>
       <ul>
@@ -55,17 +62,27 @@
         <p>RAGAS-based automated evaluation sometimes rated the revised system below the baseline, while reading the same responses suggested an improvement. I considered how educational explanations and guardrails might affect the scores, as well as potential bias from developer-created evaluation data and human review.</p>
         <p>This made me more interested in what each evaluation measures, and in understanding disagreements between retrieval metrics, automated answer evaluation, and human judgment.</p>
         <figure><img src="assets/evaluation.webp" alt="Modular RAG evaluation architecture separating retrieval metrics, generation metrics, and human review" width="1200" height="675" loading="lazy"><figcaption>Evaluating retrieval and generation separately.</figcaption></figure>
-        <div class="resource-links"><a href="https://sylee0214.tistory.com/5" target="_blank" rel="noopener noreferrer">Project retrospective (Korean)</a><a href="https://sylee0214.tistory.com/1" target="_blank" rel="noopener noreferrer">Evaluation notes (Korean)</a></div>
+        <div class="resource-links">
+<a href="https://sylee0214.tistory.com/5" target="_blank" rel="noopener noreferrer">Project retrospective (Korean)</a><a href="https://sylee0214.tistory.com/1" target="_blank" rel="noopener noreferrer">Evaluation notes (Korean)</a>
+</div>
       </div></details>
       <details class="project-details video-details"><summary>Watch the Turini demo</summary><div class="details-body">
         <div class="video-frame"><iframe data-video-src="https://www.youtube-nocookie.com/embed/HpeV3xbaJA0?hl=en" title="Turini demonstration video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
         <a href="https://youtu.be/HpeV3xbaJA0" target="_blank" rel="noopener noreferrer">Open the demo on YouTube</a>
       </div></details>
       <p class="stack">Python · Dense retrieval · BM25 · RRF · Reranking · RAGAS</p>
-    </article>
+    </div></article>
 
-    <article class="project-entry" id="evaluation" aria-labelledby="evaluation-title">
-      <div class="project-heading"><div><p class="entry-type">Personal project · 2026</p><h2 id="evaluation-title">LLM / RAG Evaluation Framework</h2><p class="project-subtitle">Finding regressions when an AI system changes</p></div></div>
+    <article class="project project-entry" id="evaluation" aria-labelledby="evaluation-title">
+      <div class="project-visual evaluation-visual">
+<span class="visual-label mono">LLM / RAG EVALUATION</span><img src="assets/evaluation.webp" alt="Evaluation framework architecture" loading="lazy"><span class="visual-foot mono">BASELINE / CANDIDATE / REGRESSION</span>
+</div>
+<div class="project-copy">
+<div class="project-heading"><div>
+<p class="entry-type">Personal project · 2026</p>
+<h2 id="evaluation-title">LLM / RAG Evaluation Framework</h2>
+<p class="project-subtitle">Finding regressions when an AI system changes</p>
+</div></div>
       <p>I developed an evaluation framework to detect performance regressions in LLM and RAG applications, comparing a baseline against a candidate after changes to models, prompts, retrieval, or reranking.</p>
       <ul>
         <li>Implemented classification evaluation with Accuracy and Macro F1, alongside retrieval evaluation with Hit@K, Recall@K, MRR, and nDCG.</li>
@@ -73,10 +90,21 @@
         <li>Evaluated LLM-based intent classification using BANKING77.</li>
       </ul>
       <p class="stack">Python · LLM evaluation · Regression testing · GitHub Actions · BANKING77</p>
-    </article>
+    </div></article>
 
-    <article class="project-entry" id="penalty" aria-labelledby="penalty-title">
-      <div class="project-heading"><div><p class="entry-type">Unity ML-Agents project · 2025</p><h2 id="penalty-title">Penalty RL</h2><p class="project-subtitle">Learning to take a penalty kick</p></div><a class="resource-link" href="https://github.com/maxx0214/Unity-adversarial-PPO-PenaltyRL" target="_blank" rel="noopener noreferrer">GitHub repository</a></div>
+    <article class="project project-entry" id="penalty" aria-labelledby="penalty-title">
+      <div class="project-visual rl-visual">
+<span class="visual-label mono">REINFORCEMENT LEARNING</span><img src="assets/penalty-rl.webp" alt="Unity penalty kick learning environment" width="854" height="480" loading="lazy"><span class="visual-foot mono">STATE → ACTION → REWARD</span>
+</div>
+<div class="project-copy">
+<div class="project-heading">
+<div>
+<p class="entry-type">Unity ML-Agents project · 2025</p>
+<h2 id="penalty-title">Penalty RL</h2>
+<p class="project-subtitle">Learning to take a penalty kick</p>
+</div>
+<a class="resource-link" href="https://github.com/maxx0214/Unity-adversarial-PPO-PenaltyRL" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+</div>
       <p>I built a Unity reinforcement learning environment in which an agent learns to perform penalty kicks. My work covered environment construction, MDP design, and training experiments.</p>
       <ul>
         <li>Defined the observation space, action space, reward function, and episode termination conditions.</li>
@@ -93,10 +121,21 @@
         <a href="https://youtu.be/yH18RyVO6G8" target="_blank" rel="noopener noreferrer">Open the demo on YouTube</a>
       </div></details>
       <p class="stack">Unity · C# · ML-Agents · Reinforcement learning · MDP design</p>
-    </article>
+    </div></article>
 
-    <article class="project-entry" id="mesa" aria-labelledby="mesa-title">
-      <div class="project-heading"><div><p class="entry-type">Undergraduate research · 2026</p><h2 id="mesa-title">Sleep variability & daytime sleepiness</h2><p class="project-subtitle">MESA actigraphy study</p></div></div>
+    <article class="project project-entry" id="mesa" aria-labelledby="mesa-title">
+      <div class="project-visual research-visual">
+<span class="visual-label mono">RESEARCH EXPERIENCE</span><div class="research-art" aria-hidden="true">
+<span>SLEEP<br>VARIABILITY</span><svg viewbox="0 0 500 130" fill="none"><path d="M0 65H500" stroke="currentColor" opacity=".15"></path><path d="M0 70L35 65L55 82L78 35L97 94L121 56L146 67L169 24L192 101L216 61L240 71L265 46L288 86L312 15L336 110L360 57L385 68L410 35L438 91L463 56L500 65" stroke="currentColor" stroke-width="2"></path></svg><small>MEAN + VARIABILITY → DAYTIME SLEEPINESS</small>
+</div>
+<span class="visual-foot mono">MESA SLEEP / ESS</span>
+</div>
+<div class="project-copy">
+<div class="project-heading"><div>
+<p class="entry-type">Undergraduate research · 2026</p>
+<h2 id="mesa-title">Sleep variability &amp; daytime sleepiness</h2>
+<p class="project-subtitle">MESA actigraphy study</p>
+</div></div>
       <p class="research-status">First author · Manuscript submitted</p>
       <p>This study examined whether night-to-night sleep variability is associated with Epworth Sleepiness Scale (ESS) scores beyond average sleep duration. We processed 2,159 raw MESA actigraphy records, with 1,527 participants included in the final analysis.</p>
       <h3>My contribution</h3>
@@ -114,20 +153,32 @@
         <a href="assets/Lee-Seungyoon-MESA-Manuscript.hwp" download>Download the submitted manuscript (HWP, Korean)</a>
       </div></details>
       <p class="stack">Python · pandas · NumPy · SciPy · statsmodels · Matplotlib · Pillow</p>
-    </article>
+    </div></article>
 
-    <section class="reading-section" id="reading" aria-labelledby="reading-title">
-      <h2 id="reading-title">Books I've studied</h2>
-      <ul class="reading-list">
-        <li>PyTorch and Unity ML-Agents for Reinforcement Learning <span>Applied volume · Korean edition</span></li>
-        <li>The Complete Guide to Python Machine Learning <span>Second edition · Korean edition</span></li>
-        <li>Build a Large Language Model (From Scratch) <span>Sebastian Raschka</span></li>
-      </ul>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <span>© 2026 SeungYoon Lee</span>
-    <a href="mailto:seoungyoon14@gmail.com">Get in touch</a>
-  </footer>
+    <section class="reading section" id="reading" aria-labelledby="reading-title"><div class="section-label">
+<span class="mono">READING</span><span>Learning behind the projects.</span>
+</div>
+<div class="reading-heading"><h2 id="reading-title">On my bookshelf.</h2></div>
+<div class="book-grid">
+<article class="book-card"><div class="book-cover"><img src="assets/book-reinforcement-learning.png" alt="PyTorch and Unity ML-Agents for Reinforcement Learning, Korean edition" loading="lazy"></div>
+<div class="book-copy">
+<span class="mono">REINFORCEMENT LEARNING</span><h3>PyTorch and Unity ML-Agents for Reinforcement Learning</h3>
+<p>Applied volume · Korean edition</p>
+</div></article>
+<article class="book-card"><div class="book-cover"><img src="assets/book-python-machine-learning.png" alt="The Complete Guide to Python Machine Learning, Korean edition" loading="lazy"></div>
+<div class="book-copy">
+<span class="mono">MACHINE LEARNING</span><h3>The Complete Guide to Python Machine Learning</h3>
+<p>Second edition · Korean edition</p>
+</div></article>
+<article class="book-card"><div class="book-cover"><img src="assets/book-build-llm.png" alt="Build a Large Language Model From Scratch book cover" loading="lazy"></div>
+<div class="book-copy">
+<span class="mono">LARGE LANGUAGE MODELS</span><h3>Build a Large Language Model (From Scratch)</h3>
+<p>Sebastian Raschka</p>
+</div></article>
+</div></section>
+  <section class="open-source section" id="open-source" aria-labelledby="open-source-title"><div class="section-label"><span class="mono">OPEN SOURCE</span></div>
+<h2 id="open-source-title">Open source.</h2>
+<div class="open-source-space" aria-hidden="true"></div></section></main>
+  <footer class="footer wrap"><span>© 2026 SeungYoon Lee</span><span class="mono">CURIOUS BY NATURE. PRECISE BY PRACTICE.</span><a href="#">BACK TO TOP</a></footer>
 </body>
 </html>
