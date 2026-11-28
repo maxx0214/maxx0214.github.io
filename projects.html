@@ -75,22 +75,27 @@
 
     <article class="project project-entry" id="evaluation" aria-labelledby="evaluation-title">
       <div class="project-visual evaluation-visual">
-<span class="visual-label mono">LLMGuard CI</span><img src="assets/evaluation.webp" alt="Evaluation framework architecture" loading="lazy"><span class="visual-foot mono">BASELINE / CANDIDATE / REGRESSION</span>
-</div>
-<div class="project-copy">
-<div class="project-heading"><div>
-<p class="entry-type">Personal project · 2026</p>
-<h2 id="evaluation-title">LLMGuard CI</h2>
-<p class="project-subtitle">Finding regressions when an AI system changes</p>
-</div></div>
-      <p>I developed an evaluation framework to detect performance regressions in LLM and RAG applications, comparing a baseline against a candidate after changes to models, prompts, retrieval, or reranking.</p>
-      <ul>
-        <li>Implemented classification evaluation with Accuracy and Macro F1, alongside retrieval evaluation with Hit@K, Recall@K, MRR, and nDCG.</li>
-        <li>Integrated automated regression testing with GitHub Actions CI.</li>
-        <li>Evaluated LLM-based intent classification using BANKING77.</li>
-      </ul>
-      <p class="stack">Python · LLM evaluation · Regression testing · GitHub Actions · BANKING77</p>
-    </div></article>
+        <span class="visual-label mono">AI REGRESSION TESTING</span>
+        <img src="assets/llmguard-ci.png" alt="LLMGuard CI logo" width="2172" height="724" loading="lazy">
+        <span class="visual-foot mono">BASELINE / CANDIDATE / QUALITY GATE</span>
+      </div>
+      <div class="project-copy">
+        <div class="project-heading">
+          <p class="entry-type">Open-source project · 2026</p>
+          <h2 id="evaluation-title">LLMGuard CI</h2>
+          <p class="project-subtitle">Local-first regression testing for AI systems</p>
+          <a class="resource-link" href="https://github.com/maxx0214/llmguard-ci" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+        </div>
+        <p>I built LLMGuard CI to answer a practical question before shipping an AI change: what got better, what got worse, and on which cases? It compares a candidate against a baseline on the same examples for retrieval, question answering, and classification.</p>
+        <ul>
+          <li>Evaluate live systems through Python or REST, or replay saved predictions by case ID without calling a model.</li>
+          <li>Set minimum scores and allowed drops for each metric. A failed quality gate can fail a GitHub Actions check before a change ships.</li>
+          <li>Review changes case by case in an HTML report, export results as JSON, and use optional paired statistics to estimate uncertainty.</li>
+        </ul>
+        <p>I checked the scoring against reference tools on SQuAD and BEIR NFCorpus and reproduced the retrieval scores from two archived Turini RAG runs without making model API calls.</p>
+        <p class="stack">Python SDK · REST API · GitHub Actions · MIT License</p>
+      </div>
+    </article>
 
     <article class="project project-entry" id="penalty" aria-labelledby="penalty-title">
       <div class="project-visual rl-visual">
@@ -135,7 +140,7 @@
 <p class="entry-type">Undergraduate research · 2026</p>
 <h2 id="mesa-title">Sleep variability &amp; daytime sleepiness</h2>
 <p class="project-subtitle">MESA actigraphy study</p>
-</div></div>
+</div><a class="resource-link" href="https://github.com/maxx0214/mesa-sleep-dataset-python-actigraphy-epworth" target="_blank" rel="noopener noreferrer">Analysis code on GitHub</a></div>
       <p class="research-status">First author · Manuscript submitted</p>
       <p>This study examined whether night-to-night sleep variability is associated with Epworth Sleepiness Scale (ESS) scores beyond average sleep duration. We processed 2,159 raw MESA actigraphy records, with 1,527 participants included in the final analysis.</p>
       <h3>My contribution</h3>
